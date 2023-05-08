@@ -21,13 +21,13 @@ export default function InvoiceForm() {
   return (
     <div className="container">
       <Navbar />
-      <div class="mb-3">
-        <label for="name" class="form-label">
+      <div className="mb-3">
+        <label hmlFor="name" className="form-label">
           Client Name
         </label>
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           id="name"
           value={newInvoice.client_name}
           onInput={(e) => {
@@ -35,13 +35,13 @@ export default function InvoiceForm() {
           }}
         ></input>
       </div>
-      <div class="mb-3">
-        <label for="date" class="form-label">
+      <div className="mb-3">
+        <label hmlFor="date" className="form-label">
           Date
         </label>
         <input
           type="date"
-          class="form-control"
+          className="form-control"
           id="date"
           value={newInvoice.date}
           onInput={(e) => {
