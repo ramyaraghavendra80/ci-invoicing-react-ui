@@ -50,10 +50,10 @@ export default function InvoiceForm() {
           Date
         </label>
         <input
-          type="date"
+          type="text"
           className="form-control"
           id="date"
-          value={invoice.date}
+          value={new Date(invoice.date).toDateString()}
           disabled
         ></input>
       </div>
