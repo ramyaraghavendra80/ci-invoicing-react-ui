@@ -5,6 +5,8 @@ import InvoiceList from './components/InvoiceList/InvoiceList';
 import InvoiceForm from "./components/InvoiceForm/InvoiceForm";
 import InvoiceItems from "./components/InvoiceItems/InvoiceItems";
 import ItemForm from "./components/ItemForm/ItemForm";
+import Login from './components/Login/Login';
+import Signup from './components/Signup/Signup';
 function App() {
   return (
     <div className="App">
@@ -17,6 +19,10 @@ function App() {
         <Route path='/:id' element={<InvoiceItems />}>
         </Route>
         <Route path='/:id/newItem' element={<ItemForm />}>
+        </Route>
+        <Route path='/Login' element={<Login />}>
+        </Route>
+        <Route path='/Signup' element={<Signup />}>
         </Route>
       </Routes>
       </BrowserRouter>

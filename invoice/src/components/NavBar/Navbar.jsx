@@ -1,10 +1,11 @@
 import './Navbar.css'
+import Login from '../Login/Login'
 
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/signup">
           Invoice App
         </a>
         <button
@@ -28,6 +29,16 @@ export default function Navbar() {
             <li className="nav-item">
               <a className="nav-link" href="/newInvoice">
                 New Invoice
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/Login">
+                Login
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/Signup">
+                SignUp
               </a>
             </li>
           </ul>
