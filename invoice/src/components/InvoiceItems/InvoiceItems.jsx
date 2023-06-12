@@ -10,7 +10,7 @@ export default function InvoiceForm() {
   const params = useParams()
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/invoices/' + params.id)
+    fetch('http://127.0.0.1:8000/project/invoices/' + params.id)
       .then((res) => res.json())
       .then((parsedRes) => {
         setInvoice(parsedRes)
@@ -53,7 +53,8 @@ export default function InvoiceForm() {
           type="text"
           className="form-control"
           id="date"
-          value={new Date(invoice.date).toDateString()}
+          value={invoice.date}
+          // {new Date(invoice.date).toDateString()}
           disabled
         ></input>
       </div>
